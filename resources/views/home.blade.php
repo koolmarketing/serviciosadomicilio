@@ -46,69 +46,34 @@ Inicio
 		<div class="row">
 			<!-- Block #1 Starts -->
 			<div class="col-sm-3 col-xs-12 block">
-				<h2><i class="icon-cogs"></i></h2>
-				<h3>Multiples Servicios</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque  dis parturient montes, nascetur ridiculus mus.
-				</p>
-				<a href="#" class="btn btn-lite">Read More</a>
+				<h2><i class="fa icon-adult"></i></h2>
+				<span class="box-title"><h4>Servicios administrativos y gestión documental</h4></span>
+				
+				<a href="#" class="btn btn-lite">Ver más</a>
 			</div>
 			<!-- Block #1 Ends -->
 			<!-- Block #2 Starts -->
-			<div class="col-sm-3 col-xs-12 block lite">
-				<h2><i class="icon-clock-5"></i></h2>
-				<h3>Horarios de atención</h3>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-				</p>
-				<ul class="list-unstyled">
-					<li class="clearfix">
-						<span class="pull-left">Lunes - Viernes</span>
-						<span class="pull-right">7.00 - 20.00</span>
-					</li>
-					<li class="clearfix">
-						<span class="pull-left">Sábado</span>
-						<span class="pull-right">10.00 - 16.30</span>
-					</li>
-					<li class="clearfix">
-						<span class="pull-left">Domingo</span>
-						<span class="pull-right">10.00 - 14.00</span>
-					</li>
-				</ul>
+			<div class="col-sm-3 col-xs-12 block ">
+				<h2><i class="fa icon-wrench-1"></i></h2>
+				<span class="box-title"><h4>Servicios Arquitectura</h4></span>
+				<a href="#" class="btn btn-lite">Ver más</a>
+				
+				
 			</div>
 			<!-- Block #2 Ends -->
 			<!-- Block #3 Starts -->
 			<div class="col-sm-3 col-xs-12 block">
-				<h2><i class="fa fa-heart-o"></i></h2>
-				<h3>Factor Humano</h3>
-				<p>
-					It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the with the release.
-				</p>
-				<a href="#" class="btn btn-lite">Read More</a>
+				<h2><i class="fa  icon-videocam-outline"></i></h2>
+				<span class="box-title"><h4>Servicios de Seguridad y mantenimiento</h4>	</span>			
+				<a href="#" class="btn btn-lite">Ver más</a>
 			</div>
 			<!-- Block #3 Ends -->
 			<!-- Block #2 Starts -->
-			<div class="col-sm-3 col-xs-12 block lite">
-				<h2><i class="icon-whatsapp"></i></h2>
-				<h3>Contacto Permanente</h3>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-				</p>
-				<ul class="list-unstyled">							
-					<li class="clearfix">
-						<span class="pull-left">Teléfono</span>
-						<span class="pull-right">(2) 604 9322</span>
-					</li>	
-					<li class="clearfix">
-						<span class="pull-left">celular</span>
-						<span class="pull-right">+57 300 5671245</span>
-					</li>
-					<li class="clearfix">
-						<span class="pull-left">Email</span>
-						<span class="pull-right">info@serviciosadomicilio.com.co</span>
-					</li>
-
-				</ul>
+			<div class="col-sm-3 col-xs-12 block ">
+				<h2><i class="fa icon-wrench"></i></h2>
+				<span class="box-title"><h4>Servicios Generales</h4></span>
+				<a href="#" class="btn btn-lite">Ver más</a>
+				
 			</div>
 			<!-- Block #2 Ends -->
 		</div>

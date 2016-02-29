@@ -68,7 +68,7 @@ Nosotros
 		</div>
 
 		<div class="col-md-4 col-sm-12 col-xs-12">
-			<h4 class="main-heading-1">NUESTROS SERVICIOS</h4>
+			<h4 class="main-heading-1">Nuestros Servicios</h4>
 
 			<p class="p-nosotros text-center">
 				Nuestra oferta de servicios integrales y su ejecución directa, permite que nuestros clientes puedan dedicarse 100% a su estilo de vida sin tener que preocuparse por los servicios auxiliares que demanda una casa u empresa; de esta forma, se ahorran costes y se aumenta la flexibilidad gracias a la experiencia de una empresa profesional como MULTISERVICIOS EN LINEA SAS y se gana en la optimización de los recursos.
