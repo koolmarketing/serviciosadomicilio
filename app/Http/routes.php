@@ -51,3 +51,7 @@ Route::get('contacto', function () {
 });
 
 Route::post('enviarpostulacion', ['uses' => 'Correos@store', 'as' => 'enviar_postulacion']);
+
+Route::post('contactopersona', ['uses' => 'Correos@contactoPersona', 'as' => 'contaco_persona']);
+
+Route::post('contactoempresa', ['uses' => 'Correos@contactoEmpresa', 'as' => 'contacto_empresa']);

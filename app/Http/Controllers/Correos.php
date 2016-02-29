@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 
 class Correos extends Controller
 {
-      public function store(Request $datos){
+	public function store(Request $datos){
 
 
-      	if ($datos->hasFile('curriculo')) {
+		if ($datos->hasFile('curriculo')) {
 
 			$file = $datos->file('curriculo');
 			$destinationPath = 'uploads/files';
@@ -34,21 +34,64 @@ class Correos extends Controller
 		
 		
 
-      	Mail::send('emails.curriculo', $data, function ($message) use($cv) {
+		Mail::send('emails.curriculo', $data, function ($message) use($cv) {
       	   // $message->from('john@johndoe.com', 'John Doe');
-      	    $message->to('registrohojadevidamulti@gmail.com', 'Servicio a Domicilio');
-      	
+			$message->to('registrohojadevidamulti@gmail.com', 'Servicio a Domicilio');
+
       	 //   $message->to('john@johndoe.com', 'John Doe');    	
-      	
-      	    $message->subject('Curriculo Nuevo');
-      	
-      	    $message->priority(3);
-      	
-      	    $message->attach($cv);
-      	});
 
-      	return redirect('contacto');
+			$message->subject('Curriculo Nuevo');
 
-    }
+			$message->priority(3);
+
+			$message->attach($cv);
+		});
+
+		return redirect('/');
+
+	}
+	public function contactoPersona(Request $datos){
+
+		$asunto        =  $datos->input('asunto');
+		$data   = $datos->input();
+		$asunto = $datos->input('asunto');
+
+		Mail::send('emails.persona', $data, function ($message) use($asunto) {
+      	   // $message->from('john@johndoe.com', 'John Doe');
+			$message->to('registrohojadevidamulti@gmail.com', 'Servicio a Domicilio');
+
+      	 //   $message->to('john@johndoe.com', 'John Doe');    	
+
+			$message->subject($asunto);
+
+			$message->priority(3);
+
+		});
+
+		return redirect('/');
+
+	}
+
+	public function contactoEmpresa(Request $datos){
+
+		$asunto        =  $datos->input('asunto');
+		$data   = $datos->input();
+		$asunto = $datos->input('asunto');
+
+		Mail::send('emails.empresa', $data, function ($message) use($asunto) {
+      	   // $message->from('john@johndoe.com', 'John Doe');
+			$message->to('registrohojadevidamulti@gmail.com', 'Servicio a Domicilio');
+			
+      	 //   $message->to('john@johndoe.com', 'John Doe');    	
+			
+			$message->subject($asunto);
+			
+			$message->priority(3);
+			
+		});
+
+		return redirect('/');
+
+	}
 
 }

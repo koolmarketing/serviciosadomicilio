@@ -38,103 +38,121 @@ Contacto
 			<div class="tab-content">
 				<div role="tabpanel" class="tab-pane active" id="home">
 					<div class="status alert alert-success contact-status"></div>
-					<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="http://sainathchillapuram.com/BS/mediplus/dental/html-fullwidth/sendemail.php" role="form">
-						<div class="row">
+					
 
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="name" class="sr-only">Nombre: </label>
-									<input type="text" class="form-control" name="name" id="name" required="required" placeholder="NOMBRE">
-								</div>
-							</div>
+					
+					{!! Form::open(array('class'=>'contact-form','method' => 'post', 'url' => 'contactopersona')) !!}
 
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="email" class="sr-only">Email: </label>
-									<input type="text" class="form-control" name="email" id="email" required="required" placeholder="EMAIL">
-								</div>
-							</div>
 
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="phoneno" class="sr-only">Teléfono: </label>
-									<input type="text" class="form-control" name="phoneno" id="phoneno" required="required" placeholder="TELÉFONO">
-								</div>
-							</div>
+					<div class="row">
+					<br>
 
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="subject" class="sr-only">Asunto: </label>
-									<input type="text" class="form-control" name="subject" id="asunto" required="required" placeholder="ASUNTO">
-								</div>
-							</div>
-
-							<div class="col-xs-12">
-								<div class="form-group">
-									<label for="message" class="sr-only">Mensaje: </label>
-									<textarea class="form-control" rows="8" name="message" id="message" required="required" placeholder="MENSAJE"></textarea>
-								</div>
-							</div>
-
-							<div class="col-xs-12">
-								<input type="submit" class="btn btn-lg btn-block btn-secondary text-uppercase" value="ENVIAR">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="name" class="sr-only">Nombre: </label>
+								<input type="text" class="form-control" name="nombre" id="name" required="required" placeholder="NOMBRE">
 							</div>
 						</div>
-					</form>
-				</div>
-				<div role="tabpanel" class="tab-pane" id="profile">
-					<div class="status alert alert-success contact-status"></div>
-					<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="http://sainathchillapuram.com/BS/mediplus/dental/html-fullwidth/sendemail.php" role="form">
-						<div class="row">
 
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="name" class="sr-only">NIT: </label>
-									<input type="text" class="form-control" name="name" id="name" required="required" placeholder="NIT">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="email" class="sr-only">Email: </label>
-									<input type="text" class="form-control" name="email" id="email" required="required" placeholder="EMAIL">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="phoneno" class="sr-only">Teléfono: </label>
-									<input type="text" class="form-control" name="phoneno" id="phoneno" required="required" placeholder="TELÉFONO">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="subject" class="sr-only">Asunto: </label>
-									<input type="text" class="form-control" name="subject" id="asunto" required="required" placeholder="ASUNTO">
-								</div>
-							</div>
-
-							<div class="col-xs-12">
-								<div class="form-group">
-									<label for="message" class="sr-only">Mensaje: </label>
-									<textarea class="form-control" rows="8" name="message" id="message" required="required" placeholder="MENSAJE"></textarea>
-								</div>
-							</div>
-
-							<div class="col-xs-12">
-								<input type="submit" class="btn btn-lg btn-block btn-secondary text-uppercase" value="ENVIAR">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email: </label>
+								<input type="text" class="form-control" name="email" id="email" required="required" placeholder="EMAIL">
 							</div>
 						</div>
-					</form>
-				</div>
 
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="phoneno" class="sr-only">Teléfono: </label>
+								<input type="text" class="form-control" name="telefono" id="phoneno" required="required" placeholder="TELÉFONO">
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="subject" class="sr-only">Asunto: </label>
+								<input type="text" class="form-control" name="asunto" id="asunto" required="required" placeholder="ASUNTO">
+							</div>
+						</div>
+
+						<div class="col-xs-12">
+							<div class="form-group">
+								<label for="message" class="sr-only">Mensaje: </label>
+								<textarea class="form-control" rows="8" name="mensaje" id="message" required="required" placeholder="MENSAJE"></textarea>
+							</div>
+						</div>
+
+						<div class="col-xs-12">
+							
+							{!! Form::submit('Enviar Datos',array('class' => 'btn btn-lg btn-block btn-secondary text-uppercase')) !!}	
+						</div>
+						<div class="form-group">
+							{!! Form::close() !!}
+						</div>
+						
+					</div>
+				</form>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="profile">
+				<div class="status alert alert-success contact-status"></div>
+				{!! Form::open(array('class'=>'contact-form','method' => 'post', 'url' => 'contactoempresa')) !!}
+					<div class="row"><br>
+
+					<div class="col-md-6">
+							<div class="form-group">
+								<label for="name" class="sr-only">Nombre de la Empresa: </label>
+								<input type="text" class="form-control" name="empresa" id="name" required="required" placeholder="NOMBRE DE LA EMPRESA">
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="name" class="sr-only">NIT: </label>
+								<input type="text" class="form-control" name="nit" id="name" required="required" placeholder="NIT">
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email: </label>
+								<input type="text" class="form-control" name="email" id="email" required="required" placeholder="EMAIL">
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="phoneno" class="sr-only">Teléfono: </label>
+								<input type="text" class="form-control" name="telefono" id="phoneno" required="required" placeholder="TELÉFONO">
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="subject" class="sr-only">Asunto: </label>
+								<input type="text" class="form-control" name="asunto" id="asunto" required="required" placeholder="ASUNTO">
+							</div>
+						</div>
+
+						<div class="col-xs-12">
+							<div class="form-group">
+								<label for="message" class="sr-only">Mensaje: </label>
+								<textarea class="form-control" rows="5" name="mensaje" id="message" required="required" placeholder="MENSAJE"></textarea>
+							</div>
+						</div>
+
+						<div class="col-xs-12">
+							<input type="submit" class="btn btn-lg btn-block btn-primary" value="ENVIAR">
+						</div>
+					</div>
+				</form>
 			</div>
 
 		</div>
 
-
 	</div>
+
+
+</div>
 
 </div>
 
