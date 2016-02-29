@@ -50,3 +50,4 @@ Route::get('contacto', function () {
 	return view('contacto');
 });
 
+Route::post('enviarpostulacion', ['uses' => 'Correos@store', 'as' => 'enviar_postulacion']);

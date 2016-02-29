@@ -12,11 +12,11 @@ Trabaja con Nosotros
 	<div class="col-md-8">
 		
 		<p class="p-nosotros">
-			{!! Form::open(array('method' => 'post', 'url' => 'postular', 'files' => true)) !!}
+			{!! Form::open(array('method' => 'post', 'url' => 'enviarpostulacion', 'files' => true)) !!}
 			
 			<div class="form-group col-md-6">
 				<label for="exampleInputEmail1"><i class="icon-user-2"></i> Nombre Completo</label>
-				<input type="text" class="form-control" name="propietario" id="exampleInputEmail1" placeholder="Email" required="requerid">
+				<input type="text" class="form-control" name="nombre" id="exampleInputEmail1" placeholder="Nombre" required="requerid">
 			</div>
 			<div class="form-group col-md-6">
 				<label for="exampleInputEmail1"><i class="icon-mail"></i> Email</label>
@@ -34,22 +34,22 @@ Trabaja con Nosotros
 
 			<div class="form-group col-md-6">
 				<label for="exampleInputEmail1"><i class=" icon-help-1"></i> Profesión</label>
-				<input type="text" class="form-control" name="celular" id="exampleInputEmail1" placeholder="Profesión" required="requerid">
+				<input type="text" class="form-control" name="profesion" id="exampleInputEmail1" placeholder="Profesión" required="requerid">
 			</div>
 
 			<div class="form-group col-md-6">
-				<label for="exampleInputEmail1"><i class="icon-attach-1"></i> Curriculo</label>
-				<input type="file" class="form-control" name="celular" id="exampleInputEmail1" placeholder="Curriculo" required="requerid">
+				<label for="exampleInputEmail1"><i class="icon-attach-1"></i> Currículo</label>
+				<input type="file" class="form-control" name="curriculo" id="exampleInputEmail1" placeholder="Currículo" required="requerid">
 			</div>
 
 			<div class="form-group col-md-12">
 				<label for="exampleInputEmail1"><i class="icon-info-2"></i>Mensaje</label>
-				<textarea name="observaciones" id="input" class="form-control" rows="2" required="required"></textarea>
+				<textarea name="mensaje" id="input" class="form-control" rows="2" required="required"></textarea>
 			</div>
 
-			<div class="form-group col-md-12">
+		<!-- 	<div class="form-group col-md-12">
 				<div class="g-recaptcha" data-sitekey="6LcSihkTAAAAALfG4Cwz95YbzFcp3pIlUH6BGAoS"></div>				
-			</div>
+			</div> -->
 
 			<div class="form-group col-md-12">
 
