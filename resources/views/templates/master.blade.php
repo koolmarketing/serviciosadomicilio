@@ -10,7 +10,8 @@
 	<meta name="author" content="">
 	<title>Servicios a Domicilio - @yield('title')</title>
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	{!! HTML::style("css/bootstrap.min.css") !!}
 
 	<link href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,700,600,800,900" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=BenchNine:400,300,700" rel="stylesheet" type="text/css">
@@ -24,6 +25,7 @@
 	{!! HTML::style("fontello/css/fontello.css") !!}
 	{!! HTML::style("css/responsive.css") !!}
 	{!! HTML::style("css/maincamoranns.css") !!}
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -49,10 +51,10 @@
 								<i class=" icon-whatsapp"></i> 310 5221789 - 310 2562047 
 							</li>
 							<li class="pull-right"> 
-								<img src="img/tarjetas.png" height="20" >
+								<img src="{!! URL::to("img/tarjetas.png") !!}" height="20" >
 							</li>
 							<li class="pull-right">
-								{!! HTML::image('img/NR.png','NR',array('class' => 'img-responsive','width'=>'150px' )) !!}
+								{!! HTML::image('img/logoklob.jpg','klob',array('class' => 'img-responsive','width'=>'40px' )) !!}
 							</li>
 						</ul>
 					</div>
@@ -72,99 +74,88 @@
 							</button>
 							
 							<a href="" class="navbar-brand">
-								<img class="img-responsive" src="images/logo.png" alt="Logo">
+								<img class="img-responsive" src="{!! URL::to('images/logo.png')!!}" alt="Logo">
 							</a>
 							
 						</div>
 
-<!-- 						 <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-      </li> -->
 
-      <div class="navbar-collapse collapse">
-      	<ul class="nav navbar-nav navbar-right">
-      		<li>{!! link_to('/','Inicio') !!} </li>
-      		<li>{!! link_to('nosotros/','Nosotros') !!} </li>
-      		<li class="dropdown">
-      		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li>{!! link_to('/','Inicio') !!} </li>
+								<li>{!! link_to('nosotros/','Nosotros') !!} </li>
+								<li class="dropdown">
+									<a href="{!! URL::to("servicios/") !!}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
 
-      			<ul class="dropdown-menu">
-      				<li><a href="#">Administración y Gest. Documental</a></li>
-      				<li><a href="#">Servicios Arquitectura</a></li>
-      				<li><a href="#">Seguridad Y Mantenimiento</a></li>
-      				<li><a href="#">Servicios Generales</a></li>
-      				
-      			</ul>
+									<ul class="dropdown-menu">
+										<li><a href="{!! URL::to("servicios/administracion") !!}">Administración y Gest. Documental</a></li>
+										<li><a href="{!! URL::to("servicios/arquitectura") !!}">Servicios Arquitectura</a></li>
+										<li><a href="{!! URL::to("servicios/seguridad_mantenimiento") !!}">Seguridad Y Mantenimiento</a></li>
+										<li><a href="{!! URL::to("servicios/servicios_generales") !!}">Servicios Generales</a></li>
+									</ul>
 
+								</li>
+								<li>{!! link_to('trabaja_con_nosotros','Trabaja con Nosotros') !!} </li>
+								<li>{!! link_to('contacto/','Contacto') !!} </li>
+							</ul>
+						</div>						
+					</div>					
+				</nav>				
+			</header>
 
+			@yield('contenido')
 
-      		</li>
-      		<li>{!! link_to('','Trabaja con Nosotros') !!} </li>
-      		<li>{!! link_to('contacto/','Contacto') !!} </li>
-      	</ul>
-      </div>						
-  </div>					
-</nav>				
-</header>
+			<footer class="main-footer">
 
-@yield('contenido')
-
-<footer class="main-footer">
-
-	<div class="footer-area">
-		<div class="container">
-			<div class="row">
+				<div class="footer-area">
+					<div class="container">
+						<div class="row">
 
 
 
 
-				<ul class="list-unstyled list-inline footer-sm-links" style="text-align: center;">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>			
-				</ul>
-				<ul class="list-unstyled footer-links-style-2" style="text-align: center;">
-					<li>
-						<i class="fa fa-mobile"></i>
-						+57 304 677 8532, 370 8923
-					</li>
-					<li>
-						<i class="fa fa-envelope"></i>
-						<a href="mailto:info@demowebsite.info">info@serviciosadomicilio.com.co</a>
-					</li>
-				</ul>
-				<span class="center-img"> <img src="img/nr_klob-w.png" width="240px" height="42px" alt=""> </span>
-			</div>
-		</div>
-	</div>
+							<ul class="list-unstyled list-inline footer-sm-links" style="text-align: center;">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>			
+							</ul>
+							<ul class="list-unstyled footer-links-style-2" style="text-align: center;">
+								<li>
+									<i class="fa fa-mobile"></i>
+									+57 304 677 8532, 370 8923
+								</li>
+								<li>
+									<i class="fa fa-envelope"></i>
+									<a href="mailto:info@demowebsite.info">info@serviciosadomicilio.com.co</a>
+								</li>
+							</ul>
+							<span class="center-img"> <img src="{!! URL::to('img/nr_klob-w.png') !!}" width="240px" height="42px" alt=""> </span>
+						</div>
+					</div>
+				</div>
 
-	<div class="copyright">
-		<div class="container text-center">
-			&copy;  copyright 2016, Multiservicios en Linea S.A.S todos los derechos reservados. Desarrollado por <a target="_blank" href="http://koolmarketing.net/">Koolmarketing</a>
-		</div>
-	</div>
+				<div class="copyright">
+					<div class="container text-center">
+						&copy;  copyright 2016, Multiservicios en Linea S.A.S todos los derechos reservados. Desarrollado por <a target="_blank" href="http://koolmarketing.net/">Koolmarketing</a>
+					</div>
+				</div>
 
-</footer>
+			</footer>
 
 
-{!! HTML::script("js/jquery-1.11.3.min.js") !!}
-{!! HTML::script("js/bootstrap.min.js") !!}
-{!! HTML::script("js/plugins/camera/js/jquery.mobile.customized.min.js") !!}
-{!! HTML::script("js/plugins/camera/js/jquery.easing.1.3.js") !!}
-{!! HTML::script("js/plugins/camera/js/camera.min.js") !!}
-{!! HTML::script("js/plugins/datepicker/js/bootstrap-datepicker.js") !!}
-{!! HTML::script("js/plugins/shuffle/jquery.shuffle.modernizr.min.js") !!}
-{!! HTML::script("js/plugins/magnific-popup/jquery.magnific-popup.min.js") !!}
-{!! HTML::script("https://maps.googleapis.com/maps/api/js") !!}
-{!! HTML::script ("js/custom.js")!!}
+			{!! HTML::script("js/jquery-1.11.3.min.js") !!}
+			{!! HTML::script("js/bootstrap.min.js") !!}
+			{!! HTML::script("js/plugins/camera/js/jquery.mobile.customized.min.js") !!}
+			{!! HTML::script("js/plugins/camera/js/jquery.easing.1.3.js") !!}
+			{!! HTML::script("js/plugins/camera/js/camera.min.js") !!}
+			{!! HTML::script("js/plugins/datepicker/js/bootstrap-datepicker.js") !!}
+			{!! HTML::script("js/plugins/shuffle/jquery.shuffle.modernizr.min.js") !!}
+			{!! HTML::script("js/plugins/magnific-popup/jquery.magnific-popup.min.js") !!}
+			{!! HTML::script("https://maps.googleapis.com/maps/api/js") !!}
+			{!! HTML::script ("js/custom.js")!!}
 
-</body>
-</html>
+			<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+			async defer>
+		</script>
+
+	</body>
+	</html>

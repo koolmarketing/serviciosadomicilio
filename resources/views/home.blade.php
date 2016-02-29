@@ -124,6 +124,8 @@ Inicio
 								<a href="" class="btn btn-secondary btn-sm">ver más</a>
 							</div>
 						</div>
+
+						<!-- <img src="{!! URL::to('img/serviciosdearquitectura.jpg') !!}" alt="" class="img-responsive img-thumbnail"> -->
 					</li>
 					<!-- List #1 Ends -->
 					<!-- List #2 Starts -->
