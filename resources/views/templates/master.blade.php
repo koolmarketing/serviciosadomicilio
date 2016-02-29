@@ -100,6 +100,11 @@
 							
 
 
+
+							<ul class="list-unstyled list-inline footer-sm-links" style="text-align: center;">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>			
+							</ul>
 							<ul class="list-unstyled footer-links-style-2" style="text-align: center;">
 								<li>
 									<i class="fa fa-mobile"></i>
@@ -110,19 +115,14 @@
 									<a href="mailto:info@demowebsite.info">info@serviciosadomicilio.com.co</a>
 								</li>
 							</ul>
-							<ul class="list-unstyled list-inline footer-sm-links" style="text-align: center;">
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>			
-							</ul>
-							
+							<span class="center-img"> <img src="img/nr_klob-w.png" width="240px" height="50px" alt=""> </span>
 						</div>
 					</div>
 				</div>
 				
 				<div class="copyright">
 					<div class="container text-center">
-						&copy; serviciosadomicilio.com.co 2016</a>
+						&copy;  copyright 2016, Multiservicios en Linea S.A.S todos los derechos reservados. Desarrollado por <a target="_blank" href="http://koolmarketing.net/">Koolmarketing</a>
 					</div>
 				</div>
 				
