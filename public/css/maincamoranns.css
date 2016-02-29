@@ -1,0 +1,56 @@
+.service-cms {
+  padding: 10px;
+  margin-bottom: 35px; }
+  .service-cms h3 {
+    padding-top: 10px;
+    margin-bottom: 13px;
+    color: #666666; }
+  .service-cms p {
+    text-align: center; }
+  .service-cms div > span.compartir {
+    text-align: center; }
+
+.link-inicio {
+  color: #ffffff;
+  text-decoration: none; }
+
+.header-pages {
+  height: 220px; }
+  .header-pages h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: sans-serif, "Open-Sans"; }
+
+.nosotros {
+  background: #666666;
+  background-image: url("../img/nosotros-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#titulo {
+  display: flex;
+  justify-content: center; }
+
+.title-center {
+  color: #ffffff;
+  text-align: ceneter;
+  align-content: center;
+  font-weight: 800;
+  text-shadow: 2px 3px 2px #555555; }
+
+.sub-title-nosotros {
+  font-family: sans-serif, "Open-Sans";
+  font-weight: 700;
+  padding-bottom: 15px; }
+
+.alquiler {
+  background: #666666;
+  background-image: url("../img/alquiler-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.text-valores {
+  font-family: "Open-Sans",sans-serif;
+  font-size: 20px; }
+
+/*# sourceMappingURL=maincamoranns.css.map */
